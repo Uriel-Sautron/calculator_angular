@@ -14,43 +14,7 @@
   margin-left: 15px;
 }
 
-.btn {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 77px;
-}
-
-.btn:nth-child(1),
-.btn:nth-child(2) {
+.keyboard__btn:nth-child(1),
+.keyboard__btn:nth-child(2) {
   margin-right: 52px;
-}
-
-.btn--primary {
-  background: #d9d9d9;
-}
-
-.btn--secondary {
-  background: #fd8900;
-  color: white;
-}
-
-.btn--large {
-  width: 191px;
-  height: 75px;
-  border-radius: 20px;
-  justify-content: flex-start;
-  padding-left: 14px;
-}
-
-p {
-  font-size: 32px;
 }

@@ -6,6 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
 }
 
 .btn--primary {
@@ -14,6 +19,7 @@
 
 .btn--secondary {
   background: #fd8900;
+  color: white;
 }
 
 .btn--large {
