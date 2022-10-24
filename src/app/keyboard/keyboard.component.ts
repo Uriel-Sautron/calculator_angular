@@ -46,7 +46,7 @@ export class KeyboardComponent implements OnInit {
         this.div(this.currentNumber, Number(this.inputKey));
         break;
       default:
-        this.currentNumber = Number(this.inputKey);
+        this.currentNumber += Number(this.inputKey);
         break;
     }
 
@@ -77,6 +77,15 @@ export class KeyboardComponent implements OnInit {
         break;
       case '=':
         this.calcul(this.operator);
+        break;
+
+      case '%':
+        if (this.operator == 'X') {
+          this.multi(this.currentNumber, Number(this.inputKey) / 100);
+        } else {
+          this.currentNumber = Number(this.inputKey) / 100;
+        }
+        this.inputKey = '';
         break;
       case 'AC':
         this.currentNumber = 0;
