@@ -1,6 +1,17 @@
+.screen {
+  font-size: 64px;
+  margin: 42px 18px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+}
+
 .keyboard {
   display: flex;
   flex-wrap: wrap;
+  gap: 47px 30px;
+  margin-left: 15px;
 }
 
 .btn {
@@ -11,6 +22,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.btn:nth-child(1),
+.btn:nth-child(2) {
+  margin-right: 52px;
 }
 
 .btn--primary {
@@ -19,6 +40,7 @@
 
 .btn--secondary {
   background: #fd8900;
+  color: white;
 }
 
 .btn--large {

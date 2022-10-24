@@ -1,5 +1,11 @@
+<div class="screen">{{ currentNumber | number: "1.1-2" }}</div>
 <div class="keyboard">
-  <div *ngFor="let button of buttons" class="btn ${button.style}">
+  <div
+    *ngFor="let button of buttons"
+    class="btn {{ button.style }}"
+    (click)="onClick(button.label)"
+    [attr.grid-area]="button.label"
+  >
     <p>{{ button.label }}</p>
   </div>
 </div>
